@@ -5,6 +5,7 @@ import {Banks} from './Components/Bank';
 import {Shops} from './Components/Shops';
 import { setConstantValue } from 'typescript';
 function App():JSX.Element {
+  let wow :number;
   return (<div>
     <Banks></Banks>
     <Shops></Shops>

@@ -1,7 +1,7 @@
 import { useState} from 'react';
 import {Bank} from '../Interfaces'
 export function Banks(): JSX.Element{
-    const [count,SetCount]=useState(0);
+    let [count,SetCount]=useState(0);
       function addclick():void{
         SetCount(count+1);
       }
@@ -9,6 +9,20 @@ export function Banks(): JSX.Element{
         Clicks:{count}
         <div>
             <button onClick={()=>addclick()}>Click Me!</button>
+        </div>
+        <div>
+        <div>
+           SHOP 
+        </div>
+        <div>
+            <button> Click Farms:20 </button>Click Farms owned:{}
+        </div>
+        <div>
+            <button> Autoclickers:50</button> Autoclickers owned{}
+        </div>
+        <div>
+            <button> Clickbait:100</button>Clickbait owned{}
+        </div>
         </div>
     </div>
 }
