@@ -3,12 +3,34 @@ import {Bank} from '../Interfaces'
 export function Banks(): JSX.Element{
     let [clicks,SetClicks]=useState(0);
     let [farmers,SetFarmers]=useState(0);
+    let [auto,SetAuto]=useState(0);
+    let [bait,SetBait]=useState(0);
       function addclick():void{
         SetClicks(clicks+1);
       }
+      function enoughclicks(price:number){
+          if(clicks>=price){
+              return true;
+          }
+          else{
+              alert('not enought clicks')
+              return false;
+          }
+      }
       function buy(price:number){
-          SetClicks(clicks-price);
-          SetFarmers(farmers+1);
+          if(enoughclicks(price)){
+            SetClicks(clicks-price);
+            if(price==20){
+                SetFarmers(farmers+1);
+            }
+            if(price==50){
+                SetAuto(auto+1);
+            }
+            if(price==50){
+                SetBait(bait+1);
+            }
+          }
+          
       }
     return <div>
         Clicks:{clicks}
@@ -20,13 +42,13 @@ export function Banks(): JSX.Element{
            SHOP 
         </div>
         <div>
-            <button onClick={()=>buy(20)}> Click Farms:20 </button>Click Farms owned:{}
+            <button onClick={()=>buy(20)}> Click Farms:20 </button>Click Farms owned:{farmers}
         </div>
         <div>
-            <button onClick={()=>buy(50)}> Autoclickers:50</button> Autoclickers owned:{}
+            <button onClick={()=>buy(50)}> Autoclickers:50</button> Autoclickers owned:{auto}
         </div>
         <div>
-            <button onClick={()=>buy(100)}> Clickbait:100</button>Clickbait owned:{}
+            <button onClick={()=>buy(100)}> Clickbait:100</button>Clickbait owned:{bait}
         </div>
         </div>
     </div>
