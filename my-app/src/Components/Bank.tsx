@@ -1,16 +1,14 @@
+import { useState} from 'react';
 import {Bank} from '../Interfaces'
 export function Banks(): JSX.Element{
-    let bank:Bank={
-        clicks: 0,
-      };
-      function addclick(bank:Bank):void{
-        bank.clicks=bank.clicks+1;
-        alert(bank.clicks)
+    const [count,SetCount]=useState(0);
+      function addclick():void{
+        SetCount(count+1);
       }
     return <div>
-        Clicks:{bank.clicks}
+        Clicks:{count}
         <div>
-            <button onClick={()=>addclick(bank)}>Click Me!</button>
+            <button onClick={()=>addclick()}>Click Me!</button>
         </div>
     </div>
 }
