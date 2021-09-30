@@ -38,13 +38,17 @@
 }
 .white{
   background-color: white;
+  height:100vh
 }
 .red{
   background-color:red;
+  height:100vh;
 }
 .blue{
   background-color:blue;
+  height:100vh;
 }
 .green{
   background-color:green;
+  height:100vh
 }
