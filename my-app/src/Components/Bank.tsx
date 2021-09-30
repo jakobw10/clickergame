@@ -41,7 +41,7 @@ export function Banks(): JSX.Element{
       }
     return <div className="bank">
         Clicks:{clicks}
-        <div>
+        <div className="click">
             <button onClick={()=>addclick(1)}>Click Me!</button>
         </div>
         <div>
@@ -49,13 +49,13 @@ export function Banks(): JSX.Element{
            SHOP 
         </div>
         <div>
-            <button onClick={()=>buy(20)}> Click Farms:20 </button>Click Farms owned:{farmers}
+            <button className="farm" onClick={()=>buy(20)}> Click Farms:20 </button>Click Farms owned:{farmers}
         </div>
         <div>
-            <button onClick={()=>buy(50)}> Autoclickers:50</button> Autoclickers owned:{auto}
+            <button className="auto" onClick={()=>buy(50)}> Autoclickers:50</button> Autoclickers owned:{auto}
         </div>
         <div>
-            <button onClick={()=>buy(100)}> Clickbait:100</button>Clickbait owned:{bait}
+            <button className="bait" onClick={()=>buy(100)}> Clickbait:100</button>Clickbait owned:{bait}
         </div>
         </div>
     </div>

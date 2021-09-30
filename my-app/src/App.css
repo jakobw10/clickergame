@@ -52,3 +52,12 @@
   background-color:green;
   height:100vh
 }
+html{
+  font-size: 40px;
+  
+}
+button{
+  font-size:40px;
+  color:white;
+  background-color: black
+}
