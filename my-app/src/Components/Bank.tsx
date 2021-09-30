@@ -8,7 +8,8 @@ export function Banks(): JSX.Element{
     let [bait,SetBait]=useState(0);
     UseInterval(
         ()=>{
-            SetClicks(clicks+1)},1000,
+            SetClicks(clicks+farmers+(2*auto)+(5*bait))},1000,
+
     )
     function addclick(owned:number):void{
         SetClicks(clicks+owned);
@@ -32,7 +33,7 @@ export function Banks(): JSX.Element{
             if(price===50){
                 SetAuto(auto+1);
             }
-            if(price===50){
+            if(price===100){
                 SetBait(bait+1);
             }
           }
