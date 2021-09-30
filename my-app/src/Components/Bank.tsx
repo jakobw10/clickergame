@@ -1,7 +1,6 @@
-import React, { useEffect } from 'react';
+
 import { useState} from 'react';
 import UseInterval from '../custom Hooks/useinterval';
-import {Bank} from '../Interfaces'
 export function Banks(): JSX.Element{
     let [clicks,SetClicks]=useState(0);
     let [farmers,SetFarmers]=useState(0);
