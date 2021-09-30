@@ -39,7 +39,7 @@ export function Banks(): JSX.Element{
           }
           
       }
-    return <div>
+    return <div className="bank">
         Clicks:{clicks}
         <div>
             <button onClick={()=>addclick(1)}>Click Me!</button>
