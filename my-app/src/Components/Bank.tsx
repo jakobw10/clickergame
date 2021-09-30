@@ -1,32 +1,39 @@
+import React, { useEffect } from 'react';
 import { useState} from 'react';
+import UseInterval from '../custom Hooks/useinterval';
 import {Bank} from '../Interfaces'
 export function Banks(): JSX.Element{
     let [clicks,SetClicks]=useState(0);
     let [farmers,SetFarmers]=useState(0);
     let [auto,SetAuto]=useState(0);
     let [bait,SetBait]=useState(0);
-      function addclick():void{
-        SetClicks(clicks+1);
-      }
-      function enoughclicks(price:number){
-          if(clicks>=price){
-              return true;
-          }
-          else{
-              alert('not enought clicks')
-              return false;
-          }
-      }
+    UseInterval(
+        ()=>{
+            SetClicks(clicks+1)},1000,
+    )
+    function addclick(owned:number):void{
+        SetClicks(clicks+owned);
+        
+    }
+    function enoughclicks(price:number){
+        if(clicks>=price){
+            return true;
+        }
+        else{
+            alert('not enougth clicks')
+            return false;
+        }
+    }
       function buy(price:number){
           if(enoughclicks(price)){
             SetClicks(clicks-price);
-            if(price==20){
+            if(price===20){
                 SetFarmers(farmers+1);
             }
-            if(price==50){
+            if(price===50){
                 SetAuto(auto+1);
             }
-            if(price==50){
+            if(price===50){
                 SetBait(bait+1);
             }
           }
@@ -35,7 +42,7 @@ export function Banks(): JSX.Element{
     return <div>
         Clicks:{clicks}
         <div>
-            <button onClick={()=>addclick()}>Click Me!</button>
+            <button onClick={()=>addclick(1)}>Click Me!</button>
         </div>
         <div>
         <div>
