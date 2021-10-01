@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/jakobw10/clickergame/static/css/main.587d2a9c.chunk.css",
+    "main.js": "/jakobw10/clickergame/static/js/main.db358dce.chunk.js",
+    "main.js.map": "/jakobw10/clickergame/static/js/main.db358dce.chunk.js.map",
+    "runtime-main.js": "/jakobw10/clickergame/static/js/runtime-main.e93f6516.js",
+    "runtime-main.js.map": "/jakobw10/clickergame/static/js/runtime-main.e93f6516.js.map",
+    "static/js/2.af2d25e0.chunk.js": "/jakobw10/clickergame/static/js/2.af2d25e0.chunk.js",
+    "static/js/2.af2d25e0.chunk.js.map": "/jakobw10/clickergame/static/js/2.af2d25e0.chunk.js.map",
+    "static/js/3.88eae9f0.chunk.js": "/jakobw10/clickergame/static/js/3.88eae9f0.chunk.js",
+    "static/js/3.88eae9f0.chunk.js.map": "/jakobw10/clickergame/static/js/3.88eae9f0.chunk.js.map",
+    "index.html": "/jakobw10/clickergame/index.html",
+    "static/css/main.587d2a9c.chunk.css.map": "/jakobw10/clickergame/static/css/main.587d2a9c.chunk.css.map",
+    "static/js/2.af2d25e0.chunk.js.LICENSE.txt": "/jakobw10/clickergame/static/js/2.af2d25e0.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e93f6516.js",
+    "static/js/2.af2d25e0.chunk.js",
+    "static/css/main.587d2a9c.chunk.css",
+    "static/js/main.db358dce.chunk.js"
+  ]
+}
